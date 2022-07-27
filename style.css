@@ -1,0 +1,246 @@
+@import url('https://fonts.googles.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googles.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position:absolute;
+    height:100vh;
+    font-family: 'Fire Sans',sans-serif;
+    transition: transform 0.3s ease-in;
+    background:rgb(167, 198, 225);
+}
+.sidebar nav{
+    padding:72px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding:33px 0;
+}
+
+.sidebar nav li a{
+    text-decoration:none;
+    color:rgb(3, 9, 33);
+}
+
+.main{
+    height:100%;
+    width: 100%;
+}
+
+.container{
+    display:flex;
+}
+
+.infocontainer{
+    background-color: rgb(140, 140, 205);
+    height:100%;
+    width:100%;
+    margin: 100px auto;
+    display:flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    font-family: 'Sourse Code pro', monospace;
+}
+.hello{
+    font-size:70px;
+}
+.name{
+    font-size:40px;
+    font-weight: bold;
+    font-family:'Fira Sans',sans-serif;
+}
+.about{
+    font-size:30px;
+   
+}
+.moreabout{
+    font-size:22px;
+    margin-top:23px;
+    font-family:'Fira Sans',sans-serif;
+}
+.button{
+    margin-top:34px;
+}
+.btn{
+ padding: 9px 14px;
+ border-radius: 22px;
+ color: white;
+ background-color: dodgerblue;
+ font-weight: bold;
+ font-size: 21px;
+ margin: 0 3px;
+ cursor: pointer;
+}
+.moreText{
+    display:none;
+}
+.btn-sm{
+    font-size: 14px;
+    padding:10px 19px;
+    margin: 10px 0;
+}
+
+.text.show-more .moreText{
+    display: inline;
+}
+.text.show-more .dots{
+    display: none;
+}
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.devPic img{
+ left:0;
+ height: 58vh;
+ width:30vw;
+}
+
+.contactform{
+    padding: 350px;
+    padding-top:144px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(140, 140, 205);
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    /*padding:12px 0;*/
+}
+
+.contactform form div{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+
+}
+.contactform form div input{
+   /*width: 26vw;*/
+   border-radius: 5px;
+   margin: 6px; 
+   padding: 3px;
+}
+#emailHelp{
+    font-size: 11px;
+    color:rgb(4, 4, 18);
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check{
+   flex-direction:row;
+}
+
+#form-check input{
+width:24px;
+margin:3px 0;
+}
+.blogItem{
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.blogcontainer{
+   margin:0;
+   padding-top: 0;
+   padding: 90px;
+   background-color: rgb(140, 140, 205);
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin:23px;
+}
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+.intro{
+    margin: 0;
+    padding-top: 150px;
+    padding: 130px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(140, 140, 205);
+}
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+ 
+.skillcontainer{
+  padding: 12px;
+}
+.projectcontainer{
+    padding: 20px;
+}
+
+.skillItem{
+    display:flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight:900;
+}
+.skill{
+    width: 260px;
+    height:5px;
+    background-color:red;
+    border: 2px solid black;
+}
+
+.hundred{
+    width:260px;
+    background-color:blueviolet;
+}
+.t75{
+    width:195px;
+    background-color:aqua;
+}
+.t50{
+    width:130px;
+    background-color:blue;
+}
+.t5{
+    width:65px;
+    background-color:yellow;
+}
+.sidebarGo{
+    transform:translate(-443px, 0px);
+    position: absolute;
+}
+.hamb{
+    position:absolute;
+    cursor:pointe;
+    top : 10px;
+    left: 10px;
+}
+.ham{
+    margin-top:10px;
+}
+.cross{
+    margin-left:125px;
+    margin-top:10px;
+}
+
+@media(max-width: 1215px){
+    *{
+        background-color:rgb(42, 7, 7);
+    }
+    .devPic{
+        display:none;
+    }
+   .intro, .blogContainer, .contactform{
+       margin: 0;
+   }
+}
